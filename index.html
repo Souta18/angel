@@ -1,75 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Portfolio — Angel Joyce</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="resume">
-    <div class="left">
-      <img src="Image/aje.jpg" alt="Profile Picture">
-      <h1>Angel Joyce L. Enriquez</h1>
-      <p>📍 Norzagaray bulacan, Philippines</p>
-      <p>📧 angeljoyceenriquez@gmail.com</p>
-      <p>📱 09364812429</p>
+  <header class="site-header">
+    <div class="profile">
+      <img src="image/aje.jpg" alt="Angel Joyce" class="avatar"/>
+      <div class="meta">
+        <h1>Angel Joyce L. Enriquez</h1>
+        <p class="location">📍 Norzagaray, Bulacan</p>
+        <p class="contact">📧 angeljoyceenriquez24@gmail.com · 📱 09364812429</p>
+      </div>
     </div>
+  </header>
 
-    <div class="right">
-      <section>
+  <main class="container">
+    <aside class="left-col">
+      <section class="card about-card">
         <h2>About Me</h2>
-        <p>I am Angel Joyce L. Enriquez, 18 years old from Norzagaray, Bulacan. I was born on November 23, 2006, in Bocaue, Bulacan. I am a simple and friendly person who enjoys spending time doing things that make me happy.
-
-I love listening to music and playing online games in my free time. I also enjoy funny moments and just chilling with friends because I appreciate people who lighten up and make life fun. I am sometimes a quiet person, but I like to help others in any way I can, even in small things.</p>
+        <p>I am Angel Joyce L. Enriquez, 18 years old from Norzagaray, Bulacan. I was born on November 23, 2006, in Bocaue, Bulacan. I am a simple and friendly person who enjoys spending time doing things that make me happy.</p>
+        <p>I love listening to music and playing online games in my free time. I also enjoy funny moments and just chilling with friends because I appreciate people who lighten up and make life fun.</p>
+        <p>I can be quiet sometimes, but I like to help others in any way I can, even in small things.</p>
       </section>
 
-      <section>
+      <section class="card skills-card">
         <h2>Skills</h2>
-        <div class="skill">
-          <div class="skill-name">C++</div>
-          <div class="progress-bar"><div class="progress cpp">80%</div></div>
+        <div class="skills-grid">
+          <div class="skill">
+            <div class="radial r80">80%</div>
+            <div class="skill-name">C++</div>
+          </div>
+          <div class="skill">
+            <div class="radial r85">85%</div>
+            <div class="skill-name">C#</div>
+          </div>
+          <div class="skill">
+            <div class="radial r85">85%</div>
+            <div class="skill-name">VB.NET</div>
+          </div>
+          <div class="skill">
+            <div class="radial r70">70%</div>
+            <div class="skill-name">HTML/CSS</div>
+          </div>
+          <div class="skill">
+            <div class="radial r75">75%</div>
+            <div class="skill-name">SQL</div>
+          </div>
         </div>
-        <div class="skill">
-          <div class="skill-name">C#</div>
-          <div class="progress-bar"><div class="progress git">85%</div></div>
-        </div>
-        <div class="skill">
-          <div class="skill-name">VB.NET</div>
-          <div class="progress-bar"><div class="progress git">85%</div></div>
-        </div>
-        <div class="skill">
-          <div class="skill-name">HTML/CSS</div>
-          <div class="progress-bar"><div class="progress hibee">70%</div></div>
-        </div>
-        <div class="skill">
-          <div class="skill-name">Database Management (SQL)</div>
-          <div class="progress-bar"><div class="progress sql">75%</div></div>
-        </div>
-        
       </section>
+    </aside>
 
-      <section>
+    <section class="right-col">
+      <div class="card projects-card">
         <h2>Projects</h2>
-        <h3>Gateway By Zero One (Attendance System) (QR) - C#/MySQL</h3>
-        <h3>Patisserie Bakery (Inventory System) - C#/Microsoft SQL</h3>
-        <h3>Cupid's crush (Ordering System) - VB.NET/MySQL</h3>
-        <h3>Donut (Ordering System) - C++</h3>
-        <h3>E-Portfolio - HTML/CSS</h3>  
-      </section>
+        <div class="projects">
+          <article class="project">
+            <h3>Gateway By Zero One</h3>
+            <p>Attendance System (QR) — C# / MySQL</p>
+          </article>
+          <article class="project">
+            <h3>Patisserie Bakery</h3>
+            <p>Inventory System — C# / MS SQL</p>
+          </article>
+          <article class="project">
+            <h3>Cupid's Crush</h3>
+            <p>Ordering System — VB.NET / MySQL</p>
+          </article>
+          <article class="project">
+            <h3>Donut</h3>
+            <p>Ordering System — C++</p>
+          </article>
+          <article class="project">
+            <h3>E-Portfolio</h3>
+            <p>HTML / CSS</p>
+          </article>
+        </div>
+      </div>
 
-      <section>
+      <div class="card education-card">
         <h2>Education</h2>
-        <p><strong>Bachelor of Science in Computer Science</strong><br>
-        Norzagaray College (2024 - Present)</p>
-        <p><strong>Senior High School</strong><br>
-        Norzagaray National High School (2022 - 2024)</p>
-        <p><strong>Junior High School</strong><br>
-        Mater Dei Academy of Sta. Maria Bulacan (2018 - 2021)</p>
-        <p><strong>Elementary School</strong><br>
-        Norzagaray Elementary School (2012 - 2017)</p>
-      </section>
-    </div>
-  </div>
+        <ul class="timeline">
+          <li><strong>B.S. Computer Science</strong><br/>Norzagaray College (2024 - Present)</li>
+          <li><strong>Senior High School</strong><br/>Norzagaray National High School (2022 - 2024)</li>
+          <li><strong>Junior High School</strong><br/>Mater Dei Academy (2018 - 2021)</li>
+          <li><strong>Elementary</strong><br/>Norzagaray Elementary School (2012 - 2017)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
